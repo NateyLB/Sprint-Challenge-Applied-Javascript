@@ -22,7 +22,7 @@ function Header(dateParam, h1Param, tempParam) {
     header.appendChild(h1);
     const temp = document.createElement('span');
     temp.classList.add("temp");
-    temp.textContent = `${tempParam}\u02DA`;
+    temp.textContent = `${tempParam}\xB0`;
     header.appendChild(temp);
     headerContainer.appendChild(header);
     return header
