@@ -64,7 +64,9 @@ function createCarousel(){
   //event listener for right click, increases index of img variable array, advances to the next image
   rightButton.addEventListener('click', (event) => {
     if(i>=3){
-      i = 3;
+      imgArray[i].style.display = 'none';
+      i = 0;
+      imgArray[i].style.display = 'block';
     }
     else {
       ++i
@@ -78,7 +80,9 @@ function createCarousel(){
 
   leftButton.addEventListener('click', (event) => {
    if(i<=0){
-    i = 0;
+    imgArray[i].style.display = 'none';
+    i = 3;
+    imgArray[i].style.display = 'block';
    }
 
    else{
